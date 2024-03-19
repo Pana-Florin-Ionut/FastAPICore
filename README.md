@@ -1,0 +1,2 @@
+# FastAPICore
+FastAPI Core structure
