@@ -1,10 +1,14 @@
+import psycopg2.sql
 from sqlalchemy import create_engine
+import psycopg2
 from sqlalchemy.ext.declarative import declarative_base
 from .core.config import settings  # Assuming your config file is named config.py
 from sqlalchemy.orm import sessionmaker
 
+# psycopg2.sql.SQL("CREATE DATABASE IF NOT EXISTS fastapicore")
 # DATABASE_URL = "postgresql://postgres:1289@db/fastapicore"
 # Create the SQLAlchemy engine
+
 engine = create_engine(settings.DATABASE_URL)
 # engine = create_engine(DATABASE_URL)
 

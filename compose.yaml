@@ -39,7 +39,7 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     environment:
-      - DATABASE=psql_database
+      - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
     expose:
       - 5432

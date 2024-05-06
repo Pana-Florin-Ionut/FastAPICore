@@ -24,6 +24,7 @@ database = os.getenv("DATABASE")
 class Settings(BaseSettings):
     # Database connection details
     DATABASE_URL: str = f"postgresql://{user}:{password}@{host}:{port}/{database}"
+
     # print(f"DATABASE_URL: {DATABASE_URL}")
 
     # Secret keys for hashing and tokens
